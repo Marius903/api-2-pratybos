@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Cat and GIF</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random cat and GIF</h1>
+
+      <div class="images">
+        <div class="image-box">
+          <h2>PHOTO</h2>
+          <img id="catImage" src="" alt="Random cat photo" />
+        </div>
+
+        <div class="image-box">
+          <h2>GIF</h2>
+          <img id="catGif" src="" alt="Random cat GIF" />
+        </div>
+      </div>
+
+      <div class="controls">
+        <select id="filterSelect">
+          <option value="none">No filter</option>
+          <option value="mono">Mono</option>
+          <option value="negative">Negative</option>
+          <option value="blur">Blur</option>
+        </select>
+
+        <input type="range" id="blurIndex" min="0" max="10" value="4" />
+
+        <button id="getCatBtn">Show cat</button>
+      </div>
+
+      <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
